@@ -207,7 +207,7 @@ export class RegistroComponent {
     this.isSubmitting = true;
     setTimeout(() => {
       this.isSubmitting = false;
-    }, 10000);
+    }, 60000);
     this.empresaService.registrarEmpresa(formData).subscribe({
       next: () => {
         const suma = this.respuestas.value.reduce((acc: number, val: number) => acc + val, 0);
