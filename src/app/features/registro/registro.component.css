@@ -1,0 +1,41 @@
+.background {
+ background: linear-gradient(to right, #cceeff, #086c9e); 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+.container-formulario {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.titulo-principal {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.titulo-sade {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white; /* Letras blancas */
+  -webkit-text-stroke: 1px #086c9e; /* Contorno azul oscuro */
+  background-color: transparent; /* Sin fondo */
+}
+
+
+
