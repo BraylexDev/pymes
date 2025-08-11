@@ -205,9 +205,7 @@ export class RegistroComponent {
       respuestas: this.respuestas.value
     };
     this.isSubmitting = true;
-    setTimeout(() => {
-      this.isSubmitting = false;
-    }, 60000);
+    
     this.empresaService.registrarEmpresa(formData).subscribe({
       next: () => {
         const suma = this.respuestas.value.reduce((acc: number, val: number) => acc + val, 0);
@@ -252,6 +250,10 @@ export class RegistroComponent {
         console.error(err);
       }
     });
+
+    setTimeout(() => {
+      this.isSubmitting = false;
+    }, 10000);
   }
 
   obtenerNombrePorNivel(puntaje: number): string {
